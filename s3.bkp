@@ -1,0 +1,8 @@
+
+resource "aws_s3_bucket" "b" {
+  bucket = "olu-terraform"
+  acl    = "private"
+versioning {
+    enabled = false
+  }
+}
